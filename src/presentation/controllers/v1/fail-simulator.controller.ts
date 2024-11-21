@@ -12,8 +12,7 @@ export class FailSimulatorV1Controller{
     getPossibleFail(){
 
         const input = {
-            userId: "eca81b3e-26ff-4128-9a64-fb72ec8f8abe",
-            timestamp: new Date()
+            failureRate: 0.75
         };
 
         return this.simulateFailUseCase.handle(input);
